@@ -7,8 +7,9 @@ import * as serviceWorker from './serviceWorker';
 let model = { clicks: 5 };
 
 function render(){
-    ReactDOM.render(<App clicks={model.clicks} onClick={()=> { model.clicks += 1 }} />, document.getElementById('root'));
+    ReactDOM.render(<App clicks={model.clicks} onClick={()=> { model.clicks += 1; render(); }} />, document.getElementById('root'));
 }
+render();
 
 
 // If you want your app to work offline and load faster, you can change
