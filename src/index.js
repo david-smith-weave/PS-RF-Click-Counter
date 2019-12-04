@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 let model = { clicks: 5 };
-ReactDOM.render(<App clicks={model.clicks} />, document.getElementById('root'));
+ReactDOM.render(<App clicks={model.clicks} onClick={()=> {}} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
